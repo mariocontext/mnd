@@ -1,0 +1,90 @@
+/* Filter Navigation Styling */
+.pd_portfolio_nav, .pd_pagination {
+	position: relative;
+	clear: both;
+	width: 100%;
+	float: left;
+}
+.pd_portfolio_nav ul, .pd_pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.pd_portfolio_nav ul li, .pd_pagination ul li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+.pd_portfolio_nav ul li a, .pd_pagination ul li a {
+	float: left;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #EEEEEE;
+	color: #000000;
+	text-decoration: none;
+	border-right: 1px solid #FFFFFF;
+}
+.pd_portfolio_nav ul li a:hover,
+.pd_portfolio_nav ul li a.pd_nav_selected,
+.pd_pagination ul li a:hover,
+.pd_pagination ul li a.pd_nav_selected {
+	background-color: #DDDDDD;
+}
+/* Items Wrapper */
+.pd_items_wrapper {
+	position: relative;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+.portfolio-item {
+	padding: 5px;
+	border: 1px solid #DDDDDD;
+	background-color: #EEEEEE;
+	position: relative;
+	float: left;
+	margin: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* Caption configurations */
+.caption-top, .caption-bottom {
+	color: #ffffff;	
+	padding: 1.2em;	
+	font-weight: bold;
+	font-size: 13px;	
+	font-family: arial;	
+	cursor: default;
+	border: 0px solid #334143;
+	background: #000000;
+	text-shadow: 1px 1px 0 #202020;
+}
+.caption-top {
+   border-width: 0px 0px 8px 0px;
+}
+.caption-bottom {
+   border-width: 8px 0px 0px 0px;
+}
+.caption a, .caption a {
+	border: 0 none;
+	text-decoration: none;
+	background: #000000;
+	padding: 0.3em;
+}
+.caption a:hover, .caption a:hover {
+	background: #202020;
+}
+.caption-wrapper {
+	float: left;
+}
+br.c { 
+	clear: both; 
+}

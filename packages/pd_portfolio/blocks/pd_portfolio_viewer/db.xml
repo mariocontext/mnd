@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+	<schema version="0.3">
+		<table name="btPdPortfolioViewer">
+			<field name="bID" type="I">
+				<key />
+				<unsigned />
+			</field>
+			<field name="items" type="I" />
+			<field name="thumbsize" type="C" size="255" />
+			<field name="largewidth" type="I" />
+		</table>
+	</schema>

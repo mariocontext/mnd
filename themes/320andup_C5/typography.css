@@ -1,0 +1,8 @@
+/* 
+not really a typography style sheet. actually a custom typography and style sheet for Tiny MCE Content Block editor to pick up and customizable styles via dashboard 
+
+-- specific styles that affect how text and other content is rendered in the editor itself will be in the C5_tinymce.css 
+
+-- make sure that urls are not surrounded by quotes in this stylesheet
+
+*/

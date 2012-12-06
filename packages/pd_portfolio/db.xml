@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+	<schema version="0.3">
+		<table name="PdPortfolioImages">
+			<field name="id" type="I">
+				<key />
+				<unsigned />
+				<AUTOINCREMENT />
+			</field>
+			<field name="bID" type="I" />
+			<field name="image" type="I" />
+			<field name="title" type="C" size="255" />
+			<field name="url" type="C" size="255" />
+			<field name="description" type="X2" />
+			<field name="category" type="C" size="255" />
+		</table>
+	</schema>

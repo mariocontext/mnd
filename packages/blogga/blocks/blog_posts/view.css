@@ -1,0 +1,23 @@
+/* Styles specific blogga's blog_posts block
+----------------------------------------------------------------------------- */
+div.blogga-rss { text-align:right; }
+    div.blogga-rss span.subscribe-text { position:relative;bottom:2px; }
+
+div.entry { margin-bottom:20px; }
+    div.entry h2 {  }
+    div.entry p.small-text { font-size:11px;color:#999; }
+    div.entry p.descr { padding-bottom:.6em;margin:0;line-height:1.4em; }
+    div.entry img.ccm-output-thumbnail { float:left;border:5px solid transparent; }
+
+div.entry-details { margin:0;padding:5px 0 0;color:#999;border-top:1px solid #ccc;clear:both; }
+    div.entry-details p { padding:3px 0;font-size:12px;display:inline; }
+    div.entry-details p span.share-links { position:relative;top:2px; }
+        div.entry-details p span.share-links img { width:16px;height:16px;border:0;outline:0;margin:0 1px;padding:0; opacity: .4;-moz-opacity: .4;filter: alpha(opacity=40); }
+        div.entry-details p span.share-links img:hover { opacity: 1;-moz-opacity: 1;filter: alpha(opacity=100); }
+
+div.blogga-search-tags { padding:10px 5px; }
+a.tag { display:inline-block;padding:2px 4px 0;margin-left:10px;height:15px;color:#fff;background:#12638E;font-size:10px;font-family:verdana,tahoma,arial,sans-serif;position:relative; }
+    a.tag span {display:inline-block;height:17px;background:transparent url(gfx/tag_btn.png) no-repeat;position:absolute;top:0; }
+    a.tag span.left { width:6px;background-position:0 -18px;left:-5px; }
+    a.tag span.right { width:18px;right:-17px; }
+    a.tag:hover { color:#e5e5e5; }

@@ -1,0 +1,89 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* 600 =================================================== */
+
+// 1. ROOT 					==============================
+// 2. TYPOGRAPHY 			==============================
+// 3. COLOUR 				==============================
+// 4. TEXTURE 				==============================
+// 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+
+
+
+		#header-nav {
+			.vertical();
+			float: left;
+			width:100%;
+			overflow: hidden;
+			position: relative;
+
+				.nav-toggler {
+
+					display:none !important; /* turns off nav trigger */
+
+				}
+
+				ul {
+
+					list-style: none;
+					clear:left;
+					float:left;
+					margin:0;
+					padding: 0;
+					position: relative;
+					left: 50%;
+					text-align:center;
+
+				}
+
+				ul li {
+					display: block;
+					float:left;
+					list-style: none;
+					margin:0;
+					padding: 0;
+					position: relative;
+					right: 50%;
+
+				}
+
+				ul li a {
+					display: block !important;
+					margin: 0 0 1px 1px; // IE fix
+					margin: 0 0 .1rem .1rem;
+					padding: 16px; // IE fix
+					padding: 1rem;
+					text-decoration: none;
+					line-height: 16px;
+					line-height: 1rem;
+					.font-size(18);
+					border: none;
+				}
+
+		}
+
+		.return-to-top, .go-to-sitemap {
+
+			display: none;
+
+		}
+
+		/* c5 layout tweaks for above 600 */
+
+		.ccm-layout-table .ccm-layout-col {
+
+
+
+		}
+
+// 7. VENDOR-SPECIFIC 		==============================
+// 8. MODERNIZR 			==============================
+// 9. TEMPLATE SPECIFICS 	==============================

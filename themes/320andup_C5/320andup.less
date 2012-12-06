@@ -1,0 +1,233 @@
+/* ============================================================
+
+320 and Up by Andy Clarke
+Version: 3.0
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+============================================================ */
+
+// 1. ROOT 					==============================
+
+// CSS reset
+@import "reset.less";
+
+// Variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Site wide styles (html, body)
+@import "site.less";
+
+// 2. TYPOGRAPHY 			==============================
+
+// Block level (h1, p) and text-level (em, strong) type
+@import "typography.less";
+
+// 3. COLOUR 				==============================
+
+// Colour interaction semantics
+@import "colour.less";
+
+// 4. TEXTURE 				==============================
+
+// Alerts, badges, boxes and gradients
+@import "texture.less";
+
+// Font Awesome icon fonts (optional)
+@import "font-awesome.less";
+
+// 5. ELEMENTS 				==============================
+
+// Figures, images and other elements
+@import "elements.less";
+
+// Standard form controls
+@import "forms.less";
+
+// Button styles (optional)
+@import "buttons.less";
+
+// Tables
+@import "tables.less";
+
+// 6. LAYOUT 			==============================
+
+// Page level layout styles (banner, navigation, content, contentinfo)
+@import "page.less";
+
+//  7. VENDOR-SPECIFIC 		==============================
+//  8. MODERNIZR 			==============================
+
+// @import "modernizr.less";
+
+//  9. TEMPLATE SPECIFICS 	==============================
+//  10. MEDIA QUERIES 		==============================
+
+@media print {
+@import "print.less";
+}
+
+
+// Layout option using display:table for navigation positioning
+// @import "upstarts/320andup-display-table/upstart.less";
+
+//custom overrides and tweaks for c5 and other basics v4
+@import "custom.less";
+
+/* temp working overrides so for easy development v3 */
+
+//removed body div selector from reset.less in favor of just div
+
+/* tweaks */
+
+#main-container {
+	padding:20px;
+	margin: 0 auto;
+}
+
+/* overrides */
+
+ul, ol {
+margin: 0 0 1.5em 0px;
+padding-left: 0;
+list-style-position: inside;
+}
+
+img {
+max-width: 100%; // at 600px or higher switches to auto
+height: auto;
+
+}
+ // removed table hover effect in tables.less - this was effecting forms and can be an interactive cue for noninteractive elements. removed td borders as well with parameters
+
+ /* c5 theme tweaks */
+
+/* js driven drop down - degrades to a simple list with no js */
+
+#logo-area a {
+
+.font-size(40);
+
+}
+
+#header-nav {
+
+ 	text-decoration:none;
+	text-align:left;
+
+	ul {
+		list-style:none;
+		.font-size(18);
+	}
+
+	li a {
+		text-decoration: none;
+		.vertical();
+		margin-top:.25rem;
+		border:1px solid @bordercolor;
+		padding: 1rem;
+		display: none;  //stops flicker of nav buttons showing - may cause problems with screen readers
+		
+	}
+
+ }
+
+
+/* breadcrumbs */
+
+// stop from showing on homepage
+#page1 #breadcrumbs-threetwenty {
+
+display: none;
+
+}
+
+#breadcrumbs-threetwenty {
+  padding: 32px 0px 32px 16px !important;
+  padding: 2rem 0rem 2rem 1rem !important;
+}
+
+/* main content */
+#general-content {
+  	margin: 4rem 0;
+}
+
+/* footer tweaks */
+
+.return-to-top a, .go-to-sitemap a {
+
+.button-link(@bordercolor);
+
+}
+
+.footer-sign-in {
+
+	.hidden();
+
+}
+
+//plug-in tweaks
+
+
+// made change to 1382.less - moved max-width to main-container from body - plays better on larger screens sizes
+// change to typography.less p, ol, ul, dl, address tags to be 18 size
+
+// 480px
+
+@media only screen and (min-width: 480px) {
+@import "480.less";
+// added nav tweaks for devices above 480
+}
+
+// 600px
+
+// added various styles
+
+@media only screen and (min-width: 599px) {
+
+
+}
+
+@media only screen and (min-width: 600px) {
+@import "600.less";
+}
+
+
+
+// 768px
+@media only screen and (min-width: 768px) {
+@import "768.less";
+}
+
+// 992px
+@media only screen and (min-width: 992px) {
+@import "992.less";
+}
+//set width to 960px for main-container
+
+
+// 1382px
+@media only screen and (min-width: 1382px) {
+@import "1382.less";
+}
+
+// 2x
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+@import "2x.less"; }
+
+//  11. UPSTARTS 			==============================
+
+// Modules and panels
+@import "upstarts/320andup-modules/upstart.less";
+@import "upstarts/320andup-panels/upstart.less";
+
+
+
+
+
+
+

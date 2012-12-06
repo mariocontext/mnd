@@ -1,0 +1,461 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*
+-creator : Mario Noble
+
+READ ME:
+
++++++++++++++++++++
+
+If you don't have much of a background in CSS please open and edit the typography.css page which should included in the same directory as this file.
+
++++++++++++++++++++
+
+Notes on CSS order:
+
+-General tags (body,html,H's,a's, etc.)
+-General DIVS and styles applied by section beginning at top of site page
+	examples: wrappers,main nav,header,content,indiv cols,footer,etc.
+-Specific section styles based on function and rarity of occurance or specificity
+	examples: forms, front landing page, miscellanous classes and DIVS
+-Misc styles, Turn offs and storage
+
+Most styles are displayed as Tag,DIV,class in that order within their sections
+
+
+++++++++++++++++++
+Concrete 5 template note: look inside typography file for general TAG modifications, 
+change font colors, sizes and section backgrounds
+++++++++++++++++++
+
+*/
+ 
+ /* TAGS */
+
+/* General tags */
+html, body {
+	min-height:100%;
+	height:100%;
+	margin-bottom:1px;
+}
+
+html {
+	margin:0px;
+	padding:0px;
+	
+}
+
+body {
+	font-size:76%;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+
+/* DIVS */
+
+/* container elements */
+#containerWrap {
+	width:100%;
+}
+
+#container {
+	text-align:left;
+	font-size:1em;
+}
+
+#container ul.nav li {
+	font-size:1.2em;
+	padding:8px 0px 8px 5px;
+	list-style:none;
+}
+
+#container ul.nav li a {
+	text-decoration:none;
+	font-weight:700;
+}
+
+#container ul.nav li ul li {
+		border-bottom-style: none;
+        font-size:.85em;
+        padding:8px 0px 4px 5px; 
+}
+
+
+/* header elements */
+
+#headerWrap {
+	width:100%;
+}
+
+#header {
+	margin:0 auto;
+	width:1000px;
+}
+
+#headerItems {
+  	position:relative;
+}
+
+#headerLogo {
+	position:relative;
+	padding:10px 0px 0px 10px;
+}
+
+#logoText a, #logoText a:hover, #logoText a:active, #logoText a:focus {
+	font-size:1.75em;
+	text-decoration:none;
+}
+
+#headerNav {
+	width:1000px;
+	margin:0 auto;
+}
+
+#headerNav ul {
+	border:none;
+	font-size:1.1em;
+	list-style:none;
+}
+
+#headerNav ul li {
+	float:left;
+	white-space:nowrap;
+}
+
+#headerSecondaryContent {
+	height:25px;
+}
+
+
+/* myContent elements */
+
+#myContent {
+	width:1000px;
+	padding:30px 0px;
+	margin:0 auto;
+	min-height:100%;
+	overflow:auto; /*makes sure that firefox applies background */
+}
+
+/* primaryContent elements - generally main content */
+
+#primaryContent {
+	width:600px;
+	padding:10px 20px 0px 20px;
+	float:right;
+	position:relative;
+	right:269px;
+}
+
+#primaryContent p, #primaryContent li {
+	line-height:1.5em;
+    padding:5px 0px;
+}
+
+
+#primaryContent li {
+	list-style-position: inside;	
+	list-style-type: square;
+	font-size:1.5em;		
+}
+
+#primaryContent object embed {
+   margin-bottom:10px;
+}
+
+#primaryContent .breadcrumb {
+   padding:5px 0px 25px 5px;
+}
+
+
+/* #secondaryContent1 elements - generally left sidebar*/
+
+#secondaryContent1 {
+	float:left;
+	width:160px;
+	position:relative;
+	left:10px;
+	top:0px;
+	padding:0px 0px 5px 0px;
+}
+
+#secondaryContent1 h2 {
+    position:relative;
+	left:0px;
+	top:0px;
+	margin:0;
+}
+
+#secondaryContent1 p {
+	padding:5px 5px;	
+}
+
+		/* for styling descending tree of sidebar auto-nav nav */
+
+#secondaryContent1 ul.nav li {
+	border-bottom-style: solid;
+}
+
+#secondaryContent1 ul.nav { 
+}
+
+#secondaryContent1 ul.nav li a {
+}
+
+#secondaryContent1 ul.nav li a:hover {
+}
+
+
+#secondaryContent1 ul.nav li ul li {
+}
+
+#secondaryContent1Wrap {
+}
+
+/* secondaryContent2 elements - generally right sidebar */
+
+#secondaryContent2 {
+	float:right;
+	width:160px;
+	position:relative;
+	left:430px;
+	top:0px;
+}
+
+/* footer elements */
+
+#footerWrap {
+	width:100%;
+	clear:both;
+}
+
+#footer {
+	width:1000px;
+	font-size:0.85em;
+	margin:0 auto;
+	
+}
+
+#footerNav {
+	padding:30px 0px;
+
+}
+
+#footerNav ul {
+	padding-left:10px;
+}
+
+#footerNav ul li {
+	float:left;
+	white-space:nowrap;
+	padding:0px 5px;
+}
+
+
+#footerInfo {
+	text-align:left;
+	padding:10px 0px 0px 10px;
+}
+
+/* jQuery lightBox plugin - Gallery style */
+	#gallery {
+		padding: 10px;
+		width: 480px;
+	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery ul img {
+		border: 5px solid #141c67;
+		border-width: 5px 5px 20px;
+	}
+	#gallery ul a:hover img {
+		border: 5px solid #036;
+		border-width: 5px 5px 20px;
+		color: #333;
+	}
+	#gallery ul a:hover {
+		color: #036;
+}
+
+/* forms */
+
+#primaryContent form td {
+    padding:5px 0px 5px 5px;	
+}
+
+#primaryContent td { 
+	padding: 5px;
+	font-weight:700;
+}
+
+#contactForm label {
+	font-weight:700;
+}
+
+
+#formTextBoxes input {
+left:575px;
+position:absolute;
+}
+
+#container .formText2,.formContent p {
+	font-weight:700;
+	color:#333;
+}
+
+#container .formBlockSubmitButton {
+        color:#333;
+        font-weight:700;
+}
+
+#container .formContent {
+padding:20px 5px 5px;
+}
+
+#container .formText1 {
+font-weight:700;
+font-size:1.2em;
+}
+
+#container .formContent ul {
+list-style-type:none;
+}
+
+.formContent {
+	color:#999;
+	
+}
+
+.formHR {
+	width:250px;
+	text-align:left;
+	color:#CCC;
+}
+
+.formRequired {
+	text-align:left;
+	color:#333;
+}
+
+/* poll - if used */
+.poll {
+	padding:5px;
+	border: 1px solid #333;	
+	color:#333;
+	font-weight:700;
+    line-height:1.5em;
+}
+
+.poll form {
+  font-weight:normal;
+  color:#000;
+  
+}
+
+.poll input {
+   position:relative;
+   top:-3px;
+}
+
+.poll .buttons {
+   padding-top:10px;
+}
+
+.poll img {
+   width:100px;
+   height:100px;
+}
+
+#surveyResults strong {
+   position:relative;
+   left:20px;
+}
+
+/* login-in block and signed in box if used */
+#secondaryContent1 .login_block_form {
+	padding:10px 5px;
+    width:160px;
+    margin:10px 0px;
+	background-color: #EBEBEB;
+}
+
+#secondaryContent1 .loginTxt {
+	font-size:1.5em;
+}
+
+#userbox .loggedSignOut {
+    background-color: #EBEBEB;
+}
+
+#userbox {
+  margin:10px 0px;
+  border: solid 1px #333;
+}
+
+#userbox strong {
+  font-weight:700;
+}
+
+#userbox .loggedUserName {
+   
+}
+
+#userbox .loggedSignOut {
+	font-weight:700;
+	text-align:center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #666;
+}
+
+/* clear Class */
+#primaryContent .brclear {
+clear:both;
+height:0;
+font-size:1px;
+line-height:0;
+margin:0;
+}
+
+/* general classes- note: C5 needs your classes properly scoped inside a div id  */
+
+#primaryContent .returnToTop {
+text-align:right;
+}
+
+#primaryContent .slogan {
+
+	font-size:2.5em;
+	text-align:center;
+}
+
+/* header nav tweaks */
+
+#headerNav .ccm-spacer { /* IE 6 fix sees the DIV and inserts a small space - this gets rid of it */
+	clear:both;
+	height:0;
+	font-size:1px;
+	line-height:0;
+	margin:0;
+}
+
+#primaryContent .nav-selected first { /* for example, useful if you want to take the left border of of the nav  */
+
+}
+
+/* page list tweaks */
+.ccm-page-list-description {
+   padding:5px 0px 10px 5px;	
+}
+
+#primaryContent .ccm-page-list-title a:link, #primaryContent .ccm-page-list-title a:visited {
+	text-decoration:underline;
+}
+
+/* google */
+#googleTranslation {
+  padding-top:10px;	
+}

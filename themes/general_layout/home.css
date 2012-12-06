@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+#secondaryContent1 {
+    position:relative;
+    left: -20px;
+    float:right;
+}
+
+#myContent {
+	padding-top:5px;
+}
+
+#primaryContent {
+   width:750px;
+   float:left;
+   left:100px;
+}
+
+#pageVideo {
+	text-align:center;
+	padding:0px 0px 20px 0px;
+}
+
+#headerLogo {
+	/*
+	position:relative;
+	top:275px;
+	left:20px;
+	*/
+}
+
+#header {
+	/*
+	background-image: url(http://marionobledesign.com/themes/general_layout/images/headerBG.jpg);
+	background-repeat: no-repeat;
+	width:998px;
+	height:570px;  change this to change the header height */
+	/* to align the site to the left send this elment to the left - float:left */
+}

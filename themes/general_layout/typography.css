@@ -1,0 +1,710 @@
+@charset "utf-8";
+
+/* CSS Document 
+
+READ ME:
+
++++++keep this +++
+
+-creator : Mario Noble
+
+
+THIS CSS SHEET
+-General tags (body,html,H's,a's, etc.)
+-General DIVS and styles applied by section beginning at top of site page
+	examples: wrappers,containers, header, main nav, content,indiv cols,footer,etc.
+-Specific classes based on function and rarity of occurance or specificity
+	examples: forms, front landing page, miscellanous classes and DIVS
+-Misc styles, Turn offs and storage
+
+Code comments below explain different CSS functions throughout this document. Please read carefully.
+
+
+*/
+
+/* general changes to background color, font-type and size and overall links */
+
+/* TAGS */
+
+html {
+}
+
+body {
+	/* change font family */
+	font-family: Arial, Helvetica, sans-serif;
+	/* overall background color - won't show up if you're using an image - may not work depending on the design */
+	background-color:#653E17;
+	color:#FFF;
+}
+ @font-face {
+ font-family: 'TRSMillionRegular';
+ src: url(trs-million_rg-webfont.eot);
+ src: url(trs-million_rg-webfont.eot?#iefix) format('embedded-opentype'), url(trs-million_rg-webfont.woff) format('woff'), url(trs-million_rg-webfont.ttf) format('truetype'), url(trs-million_rg-webfont.svg#TRSMillionRegular) format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+#containerWrap a:link, #containerWrap a:visited {
+	/* customize_link */ color: #633; /* customize_link */
+	text-decoration:underline;
+}
+
+#containerWrap a:hover, #containerWrap a:active, #containerWrap a:focus {
+	/* customize_link_hover */ color: #FFF; /* customize_link_hover */
+	text-decoration:underline;
+}
+
+#containerWrap h1, #containerWrap h2, #containerWrap h3, #containerWrap h4, #containerWrap h5 {
+	margin:0;
+	/* font-family: 'TRSMillionRegular', Arial, san-serif; */
+	font-weight:100;
+	/* customize_misc */ color: #FFF; /* customize_misc *//* customize_misc */ /* customize_misc */
+}
+
+#containerWrap p {
+	font-size:1.5em; /* used in conjuction with body size in main.css - best overall fix for most browsers. please stick with em's instead of pixels since it's more accessible*/
+}
+
+#containerWrap strong {
+	font-weight:700; /* equivalent to bold, but better */
+}
+
+#containerWrap h1 {
+	font-size:2.55em; /* experiment and see what works best */
+	padding:3px 0px 10px 0px; /* adds a bit of space and can also give some breathing room for background images */
+	margin-bottom:15px;
+	border-bottom:5px solid #93DBF4;
+}
+
+#containerWrap h2 {
+	/* font-size:1.6em; old size for TRS font */
+	font-size:2em;
+	padding:5px 0px 5px 0px;
+	margin:25px 0px 10px 0px;
+	position:relative;
+	left:0px;
+}
+
+#containerWrap h3 {
+	/* font-size:1.6em; old size for TRS font */
+	font-size:1.6em;
+	font-weight:700;
+	padding:10px 0px 15px 0px;
+}
+
+#containerWrap .ccm-layout-wrapper h3 {
+	margin-top:40px;
+}
+
+#containerWrap h4 {
+	font-size:1.4em;
+	padding:5px 0px 5px 0px;
+}
+
+#container ul.nav li {
+	/* this can be removed if you don't want separators between nav list elements */
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	border-bottom-color: #630;
+}
+
+#container input, #container select, #container textarea {
+	background-color:#FFF !important; /* overrides google toolbar's auto background coloring of common form elements - change to a custom color*/
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #333;
+}
+
+#containerWrap img {
+	border: 0px; /* IE fix - since it sometimes draws border around linked images where you don't want them */
+}
+
+
+#containerWrap div.entry-details p {
+	color:#FFF;
+}
+
+/*container Elements */
+
+#containerWrap {
+	width:100%;
+	color:#FFF;
+	background-color:#01AEF0;
+	background-image: url(images/foterBGv3.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+#container {
+	/* color:#633; */
+	width:1000px;
+	margin:0 auto;
+}
+
+/* Header Elements */
+
+
+#headerLogo {
+	position:relative;
+	top:25px;
+	left:20px;
+	width:200px;
+}
+
+#headerNavWrap {
+	width:100%;
+}
+
+#headerNav { /* if you want to change the height remember to scale the background image or turn the image off and just color the background*/
+	position:relative;
+	top:0px; /* change this to change the nav position */
+	left:0px;
+	width:1000px;
+	color:#FFF;
+	background-color:#FFF;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	border-bottom:8px solid #93DBF4;
+}
+
+#headerNav ul {
+}
+
+#headerNav ul li {
+	padding: 8px 18px 5px 15px;
+}
+
+#headerNav ul li.first {
+	border-left-style: none;
+}
+
+#headerNav a {
+	text-decoration:none;
+	font-weight:100;
+	background-position: left top;
+	font-size:1.4em;
+	font-family: 'TRSMillionRegular', Arial, san-serif;
+}
+
+#headerNav a:link, #headerNav a:visited {
+	color:#633;
+	text-decoration:none;
+}
+
+#headerNav a:hover, #headerNav a:active, #headerNav a:focus {
+	color: #C90;
+	text-decoration:none;
+	/*background-image: url(images/coinSmallRight.png);
+	background-repeat: no-repeat;
+	background-position: center 5px; */
+    padding-top:40px;
+}
+
+/* footer */
+
+#footer a:link, #footer a:visited {
+	text-decoration:underline;
+	color:#FFF;
+}
+
+#footer a:hover, #footer a:active {
+	text-decoration:none;
+	color:#FFF;
+}
+
+#footerNav ul li {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+
+/* DIV Background Changes and Hooks */
+
+#headerWrap {
+/* change this to change the headerWrap height - make sure to do the math on all elements heights inside or you might have a conflict*/
+	
+}
+
+#header {
+	background-image: url(images/headerBGv3.jpg);
+	background-repeat: no-repeat;
+	width:1000px;
+	height:265px; /* change this to change the header height *//* to align the site to the left send this elment to the left - float:left */
+}
+
+#myNavMarker {
+	background-image: url(images/coinSmallRight.png);
+	background-repeat: no-repeat;
+	width:25px;
+	height:35px;
+	position:relative;
+	top:-100px;
+	left:455px;
+}
+
+#scorer {
+	background-color:#FFF;
+	width:114px;
+	height:100px;
+	position:relative;
+	float:right;
+	top:-55px;
+	font-size:1.2em;
+	line-height:1.3em;
+	padding:5px;
+	text-align:center;
+	font-weight:700;
+	color:#643D16;
+	border-bottom:8px solid #93DBF4;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+
+#scorer .feedback {
+	padding-top:8px;
+	font-size:1em;
+}
+
+#scorer p {
+	font-size:1em;
+}
+
+#scorer h4 {
+	color:#C90;
+	font-size:3.5em;
+	padding-top:15px;
+}
+
+#headerNav {
+/* to align the site to the left send this elment to the left - float:left */
+}
+
+#contentWrap {
+}
+
+#myContent {
+/* to align the site to the left send this elment to the left - float:left */
+}
+
+#primaryContentWrap {
+}
+
+#primaryContent {
+}
+
+#primaryContent li {
+	list-style-image: url(images/coinRightTiny.png);
+}
+
+#secondaryContent1Wrap {
+}
+
+#secondaryContent1 h3, #secondaryContent2 h3 {
+	font-size:1em;
+	padding:5px 0px 5px 5px;
+}
+
+#secondaryContent1 {
+}
+
+#secondaryContent1 ul.nav {
+	padding-top:22px;
+}
+
+#secondaryContent1 ul li {
+	border-top: 1px solid #633;
+}
+
+#secondaryContent1 ul.nav li a {
+	font-size:1.1em;
+	font-weight:100;
+}
+
+#secondaryContent1 ul.nav li a:link, #secondaryContent1 ul.nav li a:visited {
+	color:#633;
+}
+
+#secondaryContent1 ul.nav li a:hover, #secondaryContent1 ul.nav li a:active, #secondaryContent1 ul.nav li a:focus {
+	color:#FFF;
+}
+
+#secondaryContent2Wrap {
+}
+
+#secondaryContent2 {
+}
+
+#footerWrap {
+}
+
+#footer {
+	/* to align the site to the left send this elment to the left - float:left */
+	color:#FFF;
+	background-image: url(images/footerBGv4.png);
+	background-repeat: no-repeat;
+	background-position: center -48px;
+	padding:0px 0px 0px 0px;
+	width:1000px;
+	height:550px;
+}
+
+#footerNav, #footerInfo {
+	padding:10px 0px 20px 0px;
+}
+
+#footerNav ul li.first {
+	border-left-style: none;
+}
+
+/* pros and cons classes */
+
+#container .pro {
+	background-image: url(images/redMushroom.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-left:100px;
+	height:110px;
+}
+
+#container .con {
+	background-image: url(images/spikedTurtle.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-left:100px;
+	height:110px;
+}
+
+/* choice class */
+
+#container .pageChoice {
+	background-image: url(images/landStonePipe.png);
+	background-repeat: no-repeat;
+	background-position: center 60px;
+	width:250px;
+	height:200px;
+	display:block;
+	text-align:center;
+	text-decoration:none !important;
+	font-family: 'TRSMillionRegular', Arial, san-serif;
+	font-size:1.35em;
+	margin-top:20px;
+}
+
+/* handy styles for Tiny MCE content editor */
+
+#container .padimageleft {
+	/* gives a image some breathing room - doesn't actually show up in the text editor however but it does in the Concrete5 editor */
+	padding:0px 0px 0px 10px;
+}
+
+#container .padimageright {
+	/* gives a image some breathing room - doesn't actually show up in the text editor however but it does in the Concrete5 editor */
+	padding:0px 10px 0px 0px;
+}
+
+#container .brclear {
+	/* helps resolve floated element conflicts */
+	clear:both;
+	height:0;
+	font-size:1px;
+	line-height:0;
+	margin:0;
+}
+
+/* form comment label alignment fix */
+
+#containerWrap form .question, #containerWrap form .checkboxList {
+	vertical-align: top;
+	font-size:1.3em;
+}
+
+#containerWrap form input, #containerWrap form textarea, #containerWrap form select {
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	border: 3px solid #C90;
+}
+
+/* Next-Previous Link Tweaks */
+
+#primaryContentFooterNav {
+	margin:40px 0px 20px 0px;
+}
+
+#primaryContentFooterNav a:link, #primaryContentFooterNav a:visited {
+	font-size:1.1em;
+	background-color:#633;
+	color:#FFF;
+	padding:5px 10px;
+	text-decoration:none !important;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	color:#FFF;
+	font-family: 'TRSMillionRegular', Arial, san-serif;
+}
+
+#primaryContentFooterNav a:hover, #primaryContentFooterNav a:focus {
+	color:#C90;
+}
+
+#primaryContentFooterNav .ccm-next-previous-nextlink {
+	float:right;
+}
+
+#primaryContentFooterNav .ccm-next-previous-parentlink {
+	display:none;
+	visibility:hidden;
+}
+
+#primaryContentFooterNav .ccm-next-previous-wrapper .ccm-next-previous-previouslink, #primaryContentFooterNav .ccm-next-previous-wrapper .ccm-next-previous-nextlink {
+	width:50%;
+}
+
+/* primary content page list tweaks */
+
+#primaryContent .ccm-page-list-title a {
+	background-color:#633;
+	color:#FFF;
+	padding:5px 10px;
+	text-decoration:none !important;
+	-moz-border-radius: 1em;
+	border-radius: 1em;/* font-family: 'TRSMillionRegular', Arial, san-serif; */
+}
+
+#primaryContent .ccm-page-list-title a:hover, #primaryContent .ccm-page-list-title a:focus {
+	color:#C90;
+}
+
+#primaryContent .ccm-page-list {
+	margin-top:20px;
+}
+
+#primaryContent .ccm-page-list-title {
+	margin:5px 0px;
+}
+
+#primaryContent .breadcrumb {
+	font-size:1.1em;
+	line-height:1.5em;
+	color:#FFF;
+}
+
+/* Fat Footer styling */
+
+#fatFooter {
+	width:100%;
+	position:relative;
+	top:-100px;/* background-color:#633;
+	padding:20px;
+	-moz-border-radius: 1em;
+	border-radius: 1em;	*/
+}
+
+#fatFooter h3 {
+	color:#FFF;
+	padding-bottom:10px;
+	font-size:1.8em;
+}
+
+#fatFooter a {
+	line-height:1.4em;
+}
+
+#fatFooter a:link, #fatFooter a:visited {
+	text-decoration:none;
+}
+
+#fatFooter a:hover, #fatFooter a:active, #fatFooter a:focus {
+	text-decoration:underline;
+}
+
+/* social footer icons */
+
+
+
+#linkedInFooterIcon {
+	position:relative;
+	width:100px;
+	left:113px;
+	top:135px;
+}
+
+#facebookFooterIcon {
+	position:relative;
+	width:100px;
+	left:385px;
+	top:65px;
+	clear:both;
+}
+
+#twitterFooterIcon {
+	position:relative;
+	width:100px;
+	left:765px;
+	top:-118px;
+}
+
+#mushroomFooterIcon {
+	width:92px;
+	height:114px;
+	background-image: url(images/redMushroom.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	position:relative;
+	left:620px;
+	top:-135px;
+}
+
+#turtleFooterIcon {
+	width:121px;
+	height:87px;
+	background-image: url(images/greenTurtle.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	position:relative;
+	left:330px;
+	top:-100px;
+}
+
+#myMario {
+	width:54px;
+	height:82px;
+	background-image: url(images/marioSmallRight.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	position:relative;
+	left:875px;
+	top:-350px;
+}
+
+#myKey {
+	display:none;
+	width:120px;
+	height:104px;
+	background-image: url(images/keyMoveHelp.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	position:relative;
+	top:-100px;
+	left:50px;
+}
+
+/*
+#myMario:hover, #myMario:focus, #myMario:active {
+	background-image: url(images/keyMoveHelp.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width:120px;
+	height:104px;
+} */
+
+/* jquery anims */
+
+/* pop anims */
+
+#container .myPoppy {
+}
+
+/* multimedia gallery plug in fixes */
+
+
+#myContent .mmb-imageNav li.mmb-item a {
+	background:none;
+}
+
+#myContent .mmb-imageNav li.mmb-item a:hover {
+	background:none;
+}
+
+#myContent div.mmb-infos span {
+	color:#633;
+}
+
+.currentTextHolder { /* changes page numbers */
+/* color: #666; */
+}
+
+/* misc c5 form styling such as for login form */
+
+#containerWrap .ccm-form label {
+	line-height:1.2em;
+	font-size:1.5em;
+}
+
+#containerWrap .ccm-form input {
+	margin:5px 0px;
+}
+
+/* in page video fixes */
+
+#primaryContent #pageVideo {
+	padding:20px 0px;
+}
+
+/* Blogga tweaks */
+
+
+#myContent .entry, #myContent .entry p {
+	
+}
+
+#myContent .entry-details {
+	border:none;
+}
+
+#myContent .small-text {
+	font-size:1.2em;
+}
+
+#myContent .blogga-rss a {
+	text-decoration:none;
+	font-size:1.4em;
+}
+
+#myContent .entry .ccm-output-thumbnail {
+	padding:0px 10px 10px 0px;
+}
+
+#containerWrap .guestBook-formBlock h5 {
+	font-size:1.6em;
+	margin:10px 0px;
+}
+
+#containerWrap h4.guestBook-title {
+	font-size:2em;
+}
+
+#containerWrap .guestBook-formBlock label {
+	font-size:1.3em;
+	margin:10px 0px;
+}
+
+#containerWrap .guestBook-formBlock .ccm-captcha-image {
+	padding:10px 0px;
+}
+
+#containerWrap .guestBook-formBlock .ccm-input-captcha {
+	margin:10px 0px;
+}
+
+#containerWrap div.entry p.small-text {
+	color:#FFF;	
+}
+
+/* tinyMCE editor changes */
+
+body.mceContentBody {
+background: #01AEF0;
+color: #FFF;
+font-size:1em;
+}
+
+/* turn offs */
+
+/*use these to "turn off/hide" via css different website elements that you don't want displayed, like perhaps the logo or logo text. 
+  it doesn't actually get rid of them (you'd have to go into the actual php to do so) but it does hide them from view in almost all browsers.
+*/
+
+
+#logoText /*, #headerLogo, #headerLogo img */ {
+	display:none;
+	visibility:hidden;
+}

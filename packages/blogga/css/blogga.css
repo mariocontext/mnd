@@ -1,0 +1,49 @@
+.clearfix:after { content: ".";display: block;height: 0;clear: both;visibility: hidden;line-height:0px;font-size:1px; }
+* html .clearfix {zoom:1;} /* IE 6 */
+*:first-child+html .clearfix {zoom:1;} /* IE 7 */
+.greybox { background:#fafafa;border:1px solid #ddd;display:inline-block;margin:2px 0 0 8px;padding:8px;vertical-align:top; }
+.hider { display:none; }
+.highlight { background:#FDFB8E; }
+input.pretext, textarea.pretext { color:#b6b6b6; }
+textarea, input, select { font-family:Arial, Verdana, Sans-serif;font-size:13px;padding:3px; }
+
+div.cat-field { padding:5px 29px 5px 5px;border:1px solid #ddd;position:relative;margin:5px;float:left; }
+div.cat-field:hover {border:1px solid #999;cursor:pointer;}
+    div.cat-field * {outline:none;white-space:nowrap;}
+    div.cat-field input.flatten { border:none; }
+    div.cat-field img.icn-loader {margin-left:3px;display:none;}
+    div.cat-field img.btn-closer { position:absolute;right:4px;top:6px; }
+
+div.ccm-dashboard-inner p { margin:0;margin-bottom:3px;line-height:1.4em; }
+
+table.entry-form tr td.col-1 { white-space: nowrap;font-weight:bold;width:175px; }
+
+a { cursor:pointer; }
+div.line-item-group { margin-bottom:8px; }
+div.cInvoicerAttributes { float:left;margin-right:10px; }
+div.cInvoicerAttributesAddress { }
+/*td.show-categories div { display:inline-block;padding:2px 5px 2px 0;float:left; }*/
+/* sitewide default button style */
+* button, .button-style { font-size:1em;padding:5px 4px 4px 4px;background:#f5f5f5;border:1px solid #dedede;border-top:1px solid #eee;border-left:1px solid #eee; }
+
+
+/* tag autocomplete
+----------------------------------------------------------------------------- */
+ul#tag-holder { width:auto;list-style:none;padding:0;margin:0; }
+    ul#tag-holder li { padding:2px;margin:0 0 2px 0;width:auto; }
+    ul#tag-holder li a.tag-clear { visibility:hidden;width:16px;height:16px;position:relative;top:3px;left:5px;display:inline-block;background:transparent url(ico-clear.png) no-repeat 0 0; }
+        ul#tag-holder li:hover a.tag-clear { visibility:visible; }
+
+.autocomplete-w1 { background:url(shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+div.cGrey { border:1px solid #f1f1f1;padding:10px;margin-bottom:1em;width:800px; }
+    div.cGrey h3 { margin-top:.6em; }
+    div.cGrey p { padding:0 0 .6em 2em;margin:0; }
+    div.cGrey ol { padding-left:1.6em; }
+    span.under { text-decoration:underline;font-size:13px; }
+    div.cGrey img { margin:8px 15px; }
+    div.cGrey ul li { margin-bottom:10px; }

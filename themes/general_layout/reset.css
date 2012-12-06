@@ -1,0 +1,46 @@
+html, body, div, span, applet, object, iframe,
+#containerWrap h1, #containerWrap h2, #containerWrap h3, #containerWrap h4, #containerWrap h5, #containerWrap h6, #containerWrap p, #containerWrap blockquote, #containerWrap pre,
+#containerWrap a, #containerWrap abbr, #containerWrap acronym, #containerWrap address, #containerWrap big, #containerWrap cite, #containerWrap code,
+#containerWrap del, #containerWrap dfn, #containerWrap em, #containerWrap font, #containerWrap img, #containerWrap ins, #containerWrap kbd, #containerWrap q, #containerWrap s, #containerWrap samp,
+#containerWrap small, #containerWrap strike, #containerWrap strong, #containerWrap sub, #containerWrap sup, #containerWrap tt, #containerWrap var,
+#containerWrap dl, #containerWrap dt, #containerWrap dd, #containerWrap ol, #containerWrap ul, #containerWrap li,
+#containerWrap fieldset, #containerWrap form, #containerWrap label, #containerWrap legend,
+#containerWrap table, #containerWrap caption, #containerWrap tbody, #containerWrap tfoot, #containerWrap thead, #containerWrap tr, #containerWrap th, #containerWrap td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+#containerWrap :focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+#containerWrap ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+#containerWrap table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+#containerWrap caption, #containerWrap th, #containerWrap td {
+	text-align: left;
+	font-weight: normal;
+}
+#containerWrap blockquote:before, #containerWrap blockquote:after,
+#containerWrap q:before, #containerWrap q:after {
+	content: "";
+}
+#containerWrap blockquote, #containerWrap q {
+	quotes: "" "";
+}
